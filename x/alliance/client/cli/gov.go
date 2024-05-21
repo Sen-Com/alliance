@@ -119,7 +119,7 @@ func CreateAlliance() *cobra.Command {
 func UpdateAlliance() *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "update-alliance denom reward-weight reward-weight-min reward-weight-max take-rate reward-change-rate reward-change-interval",
-		Args:  cobra.ExactArgs(5),
+		Args:  cobra.ExactArgs(7),
 		Short: "Update an alliance with the specified parameters",
 		RunE: func(cmd *cobra.Command, args []string) error {
 			clientCtx, err := client.GetClientTxContext(cmd)
