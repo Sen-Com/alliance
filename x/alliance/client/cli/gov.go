@@ -153,17 +153,17 @@ func UpdateAlliance() *cobra.Command {
 				return err
 			}
 
-			takeRate, err := sdk.NewDecFromStr(args[2])
+			takeRate, err := sdk.NewDecFromStr(args[4])
 			if err != nil {
 				return err
 			}
 
-			rewardChangeRate, err := sdk.NewDecFromStr(args[3])
+			rewardChangeRate, err := sdk.NewDecFromStr(args[5])
 			if err != nil {
 				return err
 			}
 
-			rewardChangeInterval, err := time.ParseDuration(args[4])
+			rewardChangeInterval, err := time.ParseDuration(args[6])
 			if err != nil {
 				return err
 			}
