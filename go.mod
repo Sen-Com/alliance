@@ -1,4 +1,4 @@
-module github.com/terra-money/alliance
+module github.com/phoenix-directive/alliance
 
 go 1.21
 
